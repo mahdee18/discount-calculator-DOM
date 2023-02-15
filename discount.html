@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="mt-12 w-9/12 mx-auto grid grid-cols-2 gap-4 bg-purple-700 py-12 text-center text-white rounded">
+        <div>
+            <h2 class="text-3xl pb-10">Product Price:$<span id="input-amount">00</span></h2>
+            <h2></h2>
+            <h2 class="text-3xl">You have to pay :$<span id="discount-price">00</span></span></h2>
+        </div>
+        <div>
+            <h2 class="text-3xl pb-10">Product Price:$<span id="coupon-input">1000</span></h2>
+            <h2></h2>
+            <h2 class="text-3xl">You have to pay :$<span id="discount">00</span></span></h2>
+        </div>
+    </main>
+
+    <section class="mt-12 w-9/12 mx-auto grid grid-cols-2 gap-4">
+        <div class="bg-green-400 p-7 rounded-xl">
+            <h3 class="text-2xl font-semibold text-white">Product price</h3>
+            <input id="price-input" class="my-4 w-9/12 px-3 py-2 rounded" type="text"
+                placeholder="$ Please Enter your product price">
+            <br>
+            <button id="btn-discount"
+                class="bg-amber-600 px-6 py-2 rounded text-white font-semibold hover:bg-purple-700">Get 30% Off</button>
+        </div>
+        <div class="bg-yellow-400 p-7 rounded-xl">
+            <h3 class="text-2xl font-semibold text-white">Please add your coupon </h3>
+            <input id="promo-input" class="my-4 w-9/12 px-3 py-2 rounded" type="text"
+                placeholder="$ Type 'DIS30' for coupon">
+            <br>
+            <button id="btn-promo"
+                class="bg-amber-600 px-6 py-2 rounded text-white font-semibold hover:bg-purple-700">Apply Promo</button>
+        </div>
+    </section>
+    <script src="discount.js"></script>
+</body>
+
+</html>
